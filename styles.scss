@@ -1,0 +1,173 @@
+@import 'colors';
+
+body {
+	font-family: 'Glory', Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 300px;
+	text-align: center;
+	border-right: 2px solid black;
+	padding: 0;
+	background-color: $primary-color;
+
+	.sidebar-section {
+		border: 1px solid $text-secondary-color;
+		border-radius: 5px;
+		margin: 1px;
+		font-size: 25px;
+		padding: 0;
+		cursor: pointer;
+		background-color: $primary-color;
+		color: $text-secondary-color;
+		transition: 0.2s all ease-in-out;
+
+		&:hover {
+			font-size: 26px;
+			border: 2px solid black;
+			transform: scale(1.05);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+			background-color: #ecf4f5;
+			color: $text-primary-color;
+		}
+
+	}
+
+	#sb-title {
+		letter-spacing: 2px;
+		font-size: 20px;
+		border-top: 1px solid black;
+		cursor: pointer;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		color: $text-primary-color;
+
+		&:hover {
+			color: $text-secondary-color;
+		}
+
+	}
+
+}
+
+.page {
+	margin-left: 300px;
+}
+
+#home {
+
+	// background-color: #c5b1ff;
+
+	#home-title {
+		width: 100%;
+		height: 600px;
+
+		#home-title-img-container {
+			position: absolute;
+			top: 0;
+			left: 300px;
+			right: 0;
+			height: 600px;
+			z-index: -1;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				filter: blur(2px) opacity(80%);
+				// display: none;
+			}
+
+		}
+
+		#home-title-text-container {
+
+			margin: auto;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			font-size: 30px;
+			text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+
+			h1 {
+				font-size: 90px;
+				margin: 0 auto;
+				letter-spacing: 5px;
+			}
+
+			p {
+				text-transform: uppercase;
+				margin: 0 auto;
+				font-size: 20px;
+			}
+
+		}
+
+	}
+
+	#about-section {
+		background-color: $about-primary-color;
+		margin: 50px 0 10px 0;
+		padding: 0 20px 30px 20px;
+		color: $text-primary-color;
+		border-top: 1px solid $text-primary-color;
+
+		p {
+			font-size: 20px;
+			line-height: 30px;
+			letter-spacing: 1px;
+			word-spacing: 2px;
+		}
+
+		#about-title {
+			width: 130px;
+			background-color: $about-secondary-color;
+			border: 1.5px solid $text-primary-color;
+			border-radius: 3px;
+			text-align: center;
+			margin-top: -25px;
+			z-index: 2;
+
+			p {
+				white-space: nowrap;
+				margin: 10px auto;
+				line-height: normal;
+			}
+
+		}
+
+		#cv-button {
+
+			text-align: center;
+			margin-top: 50px;
+
+			button {
+				background-color: $cv-bg-color;
+				border: none;
+				padding: 15px 40px;
+				color: white;
+				font-size: 20px;
+				cursor: pointer;
+				margin: 0 auto;
+				transition: 0.2s all ease-in-out;
+
+				&:hover {
+					background-color: $cv-hover-color;
+					transform: scale(1.05);
+					font-size: 21px;
+				}
+
+			}
+		}
+
+	}
+
+}

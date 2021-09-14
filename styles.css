@@ -1,1 +1,170 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+body {
+  font-family: 'Glory', Arial, Helvetica, sans-serif;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  text-align: center;
+  border-right: 2px solid black;
+  padding: 0;
+  background-color: #f6feff;
+}
+
+#sidebar .sidebar-section {
+  border: 1px solid #6a7172;
+  border-radius: 5px;
+  margin: 1px;
+  font-size: 25px;
+  padding: 0;
+  cursor: pointer;
+  background-color: #f6feff;
+  color: #6a7172;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+#sidebar .sidebar-section:hover {
+  font-size: 26px;
+  border: 2px solid black;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ecf4f5;
+  color: #292f30;
+}
+
+#sidebar #sb-title {
+  letter-spacing: 2px;
+  font-size: 20px;
+  border-top: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #292f30;
+}
+
+#sidebar #sb-title:hover {
+  color: #6a7172;
+}
+
+.page {
+  margin-left: 300px;
+}
+
+#home #home-title {
+  width: 100%;
+  height: 600px;
+}
+
+#home #home-title #home-title-img-container {
+  position: absolute;
+  top: 0;
+  left: 300px;
+  right: 0;
+  height: 600px;
+  z-index: -1;
+}
+
+#home #home-title #home-title-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(2px) opacity(80%);
+          filter: blur(2px) opacity(80%);
+}
+
+#home #home-title #home-title-text-container {
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 30px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+#home #home-title #home-title-text-container h1 {
+  font-size: 90px;
+  margin: 0 auto;
+  letter-spacing: 5px;
+}
+
+#home #home-title #home-title-text-container p {
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#home #about-section {
+  background-color: #f6fffb;
+  margin: 50px 0 10px 0;
+  padding: 0 20px 30px 20px;
+  color: #292f30;
+  border-top: 1px solid #292f30;
+}
+
+#home #about-section p {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+#home #about-section #about-title {
+  width: 130px;
+  background-color: #fff7f6;
+  border: 1.5px solid #292f30;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: -25px;
+  z-index: 2;
+}
+
+#home #about-section #about-title p {
+  white-space: nowrap;
+  margin: 10px auto;
+  line-height: normal;
+}
+
+#home #about-section #cv-button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#home #about-section #cv-button button {
+  background-color: #5569dc;
+  border: none;
+  padding: 15px 40px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+#home #about-section #cv-button button:hover {
+  background-color: #7685e2;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-size: 21px;
+}
+/*# sourceMappingURL=styles.css.map */
