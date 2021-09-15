@@ -114,7 +114,6 @@ body {
 }
 
 #home #about-section {
-  background-color: #f6fffb;
   margin: 50px 0 10px 0;
   padding: 0 20px 30px 20px;
   color: #292f30;
@@ -130,7 +129,7 @@ body {
 
 #home #about-section #about-title {
   width: 130px;
-  background-color: #fff7f6;
+  background-color: white;
   border: 1.5px solid #292f30;
   border-radius: 3px;
   text-align: center;
@@ -142,6 +141,7 @@ body {
   white-space: nowrap;
   margin: 10px auto;
   line-height: normal;
+  color: #12007e;
 }
 
 #home #about-section #cv-button {
@@ -150,7 +150,7 @@ body {
 }
 
 #home #about-section #cv-button button {
-  background-color: #5569dc;
+  background-color: #12007e;
   border: none;
   padding: 15px 40px;
   color: white;
@@ -162,9 +162,17 @@ body {
 }
 
 #home #about-section #cv-button button:hover {
-  background-color: #7685e2;
+  background-color: #3b1493;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   font-size: 21px;
+}
+
+#projects {
+  display: none;
+}
+
+#contact {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -114,7 +114,6 @@ body {
 	}
 
 	#about-section {
-		background-color: $about-primary-color;
 		margin: 50px 0 10px 0;
 		padding: 0 20px 30px 20px;
 		color: $text-primary-color;
@@ -129,7 +128,7 @@ body {
 
 		#about-title {
 			width: 130px;
-			background-color: $about-secondary-color;
+			background-color: white;
 			border: 1.5px solid $text-primary-color;
 			border-radius: 3px;
 			text-align: center;
@@ -140,6 +139,7 @@ body {
 				white-space: nowrap;
 				margin: 10px auto;
 				line-height: normal;
+				color: $about-primary-color;
 			}
 
 		}
@@ -169,5 +169,17 @@ body {
 		}
 
 	}
+
+}
+
+#projects {
+
+	display: none;
+
+}
+
+#contact {
+
+	display: none;
 
 }
