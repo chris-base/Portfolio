@@ -3,15 +3,27 @@ pages.push(document.getElementById('home'));
 pages.push(document.getElementById('projects'));
 pages.push(document.getElementById('contact'));
 
-// for (page in pages) {
 
-// 	if (document.URL.indexOf("#" + page.id) >= 0) {
-// 		page.style.display = 'block';
-// 	} else if (document.URL.indexOf('/') >= 0) {
-// 		page.style.display = 'none';
-// 	}
+const onStartup = () => {
 
-// }
+	let loadedOnPage = false;
+
+	for (page in pages) {
+
+		if (document.URL.indexOf("#" + pages[page].id) >= 0) {
+			pages[page].style.display = 'block';
+			loadedOnPage = true;
+		} else {
+			pages[page].style.display = 'none';
+		}
+
+	}
+
+	if (!loadedOnPage) {
+		document.getElementById('home').style.display = 'block';
+		loadedOnPage = false;
+	}
+}
 
 const changePage = pageToOpen => {
 
@@ -27,3 +39,5 @@ const changePage = pageToOpen => {
 	});
 
 }
+
+onStartup();
